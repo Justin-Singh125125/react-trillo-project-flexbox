@@ -1,0 +1,54 @@
+//abstract css that we want to load first
+@import "./abstracts/variables.scss";
+@import "./abstracts/mixins.scss";
+@import "./abstracts/functions.scss";
+
+
+//base
+//next level css that we want to load after abstract
+//this allows us to use css variables inside imported files below
+@import "./base/base.scss";
+@import "./base/utilities.scss";
+@import "./base/animations.scss";
+@import "./base/typography.scss";
+
+
+//pages
+@import "./pages/Home/styles.scss";
+
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  background-color: $color-primary;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
