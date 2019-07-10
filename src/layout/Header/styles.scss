@@ -1,7 +1,49 @@
 .header{
     height: 7rem;
     background-color: #fff;
-    border-bottom: var(--color-grey-light-2);
+    border-bottom: var(--color-grey-light-2); 
+}
 
-    
+//component logo
+.logo{
+    height: 3.25rem;
+}
+
+//component search
+.search{
+    &__input{
+
+    }
+    &__button{
+
+    }
+    //since it is an svg, we style it by width and height
+    &__icon{
+        height: 2rem;
+        width: 2rem;
+    }
+}
+
+//component nav
+.user-nav{
+    &__icon-box{
+
+    }
+    &__icon{
+        height: 2.25rem;
+        width: 2.25rem;
+    }
+    &__notification{
+
+    }
+    &__user{
+
+    }
+    &__user-photo{
+        height: 3.75rem;
+        border-radius: 50%;
+    }
+    &__user-name{
+
+    }
 }
