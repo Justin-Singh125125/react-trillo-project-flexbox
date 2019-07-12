@@ -22,45 +22,15 @@
 @import "./layout/Header/styles.scss";
 @import "./layout/Hotel-View/styles.scss";
 @import "./layout/Sidebar/styles.scss";
-@import "./layout/UserNavbar/styles.scss";
-
-//components
-@import "./components/Image/styles.scss";
-@import "./components/SearchBar/styles.scss";
 
 
+//main-components
+//main componets are the only components to hold css, sub components will not hold css because
+//they will be the child of certain main components, this is so we can keep all code for one component
+//in one area
 
-.App {
-  text-align: center;
-}
+@import "./main-components/Logo/styles.scss";
+@import "./main-components/SearchBar/styles.scss";
+@import "./main-components/UserNavbar/styles.scss";
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
 
-.App-header {
-
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-  background-color: $color-primary;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

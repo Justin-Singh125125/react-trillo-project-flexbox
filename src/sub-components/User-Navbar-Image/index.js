@@ -1,20 +1,20 @@
 import React from "react";
 
-//component
+//sub-component
 import Image from "../Image";
 
 
 
 const UserBox = (props) => {
     return (
-        <div className={props.userClass}>
+        <div className="user-nav__user">
             <Image
-                className={props.className}
-                alt={props.alt}
+                className="user-nav__user-photo"
+                alt="User photo"
                 src={props.src}
 
             />
-            <span class={props.spanClass}>{props.spanText}</span>
+            <span class="user-nav__user-name">{props.spanText}</span>
         </div>
     )
 }

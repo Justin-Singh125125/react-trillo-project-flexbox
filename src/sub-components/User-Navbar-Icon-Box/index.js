@@ -5,14 +5,14 @@ import SvgIcon from "../SvgIcon";
 
 const UserNavbarIconBox = (props) => {
     return (
-        <div className={props.iconBoxClass}>
+        <div className="user-nav__icon-box">
             <SvgIcon
-                svgClass={props.svgClass}
+                svgClass="user-nav__icon"
                 svgIcons={props.svgIcons}
                 svgSelection={props.svgSelection}
 
             />
-            <span class={props.spanClass}>{props.spanText}</span>
+            <span class="user-nav__notification">{props.spanText}</span>
         </div>
     )
 }

@@ -1,0 +1,14 @@
+//main-component search
+.search{
+    &__input{
+
+    }
+    &__button{
+
+    }
+    //since it is an svg, we style it by width and height
+    &__icon{
+        height: 2rem;
+        width: 2rem;
+    }
+}
