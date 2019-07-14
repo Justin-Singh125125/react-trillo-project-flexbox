@@ -4,7 +4,6 @@ import React from "react";
 import Container from "../../layout/Container";
 import Header from "../../layout/Header";
 import Content from "../../layout/Content";
-import Sidebar from "../../layout/Sidebar";
 import HotelView from "../../layout/Hotel-View";
 
 
@@ -12,6 +11,9 @@ import HotelView from "../../layout/Hotel-View";
 import UserNavbar from "../../main-components/UserNavbar";
 import SearchBar from "../../main-components/SearchBar";
 import Logo from "../../main-components/Logo";
+import Sidebar from "../../layout/Sidebar";
+import SideNavbar from "../../main-components/Side-Navbar";
+
 
 //sub-components
 import UserNavbarIconBox from "../../sub-components/User-Navbar-Icon-Box";
@@ -63,7 +65,9 @@ class Home extends React.Component {
                     </UserNavbar>
                 </Header>
                 <Content>
-                    <Sidebar>Navigation</Sidebar>
+                    <Sidebar>
+                        <SideNavbar />
+                    </Sidebar>
                     <HotelView>Hotel View</HotelView>
                 </Content>
 
