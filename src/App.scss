@@ -24,13 +24,16 @@
 @import "./layout/Sidebar/styles.scss";
 
 
+
 //main-components
 //main componets are the only components to hold css, sub components will not hold css because
-//they will be the child of certain main components, this is so we can keep all code for one component
+//they will be the child of certain main components, this is so we can keep all code for one main component
 //in one area
-
 @import "./main-components/Logo/styles.scss";
 @import "./main-components/SearchBar/styles.scss";
 @import "./main-components/UserNavbar/styles.scss";
+@import "./main-components/Copyright/styles.scss";
+@import "./main-components/Side-Navbar/styles.scss";
+
 
 
