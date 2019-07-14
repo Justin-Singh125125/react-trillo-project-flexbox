@@ -5,7 +5,10 @@ import SvgIcon from "../SvgIcon";
 
 const NavItem = props => {
     return (
-        <li className="side-nav__item">
+        <li
+            className={window.location.pathname === props.pathname ?
+                "side-nav__item side-nav__item--active" : "side-nav__item"
+            }>
             <a href={props.href} className="side-nav__link">
                 <SvgIcon
                     svgClass="side-nav__icon"
@@ -14,7 +17,7 @@ const NavItem = props => {
                 />
                 <span>{props.spanText}</span>
             </a>
-        </li>
+        </li >
     )
 }
 

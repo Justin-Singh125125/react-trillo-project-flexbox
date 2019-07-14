@@ -16,6 +16,7 @@ const SideNavbar = props => {
             <ul className="side-nav">
                 <NavItem
                     //select the svg icon we want 
+                    pathname="/"
                     href="#Hotel"
                     svgIcons={svgIcons}
                     svgSelection="icon-home"

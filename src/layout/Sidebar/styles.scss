@@ -3,6 +3,7 @@
     //grow false, shrink false, width 18%
     flex: 0 0 18%; 
 
+    //changes the flex direction and since we are using space between, it pushes the Copyright text to the bottom
     display: flex;
     flex-direction: column;
     justify-content: space-between;
