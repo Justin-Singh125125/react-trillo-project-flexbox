@@ -13,6 +13,8 @@ import SearchBar from "../../main-components/SearchBar";
 import Logo from "../../main-components/Logo";
 import Sidebar from "../../layout/Sidebar";
 import SideNavbar from "../../main-components/Side-Navbar";
+import Gallery from "../../main-components/Gallery";
+import Overview from "../../main-components/Overview";
 
 
 //sub-components
@@ -68,7 +70,10 @@ class Home extends React.Component {
                     <Sidebar>
                         <SideNavbar />
                     </Sidebar>
-                    <HotelView>Hotel View</HotelView>
+                    <HotelView>
+                        <Gallery />
+                        <Overview />
+                    </HotelView>
                 </Content>
 
             </Container>
