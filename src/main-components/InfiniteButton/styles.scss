@@ -9,9 +9,17 @@
     cursor: pointer;
     transition: all .2s;
 
+    & span{
+        margin-left: 3px;
+        transition: margin .2s;
+    }
+
     &:hover{
         color: $color-grey-dark-1;
 
+        span{
+            margin-left: 8px;
+        }
     }
 
     &:focus{
