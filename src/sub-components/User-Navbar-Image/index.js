@@ -14,7 +14,7 @@ const UserBox = (props) => {
                 src={props.src}
 
             />
-            <span class="user-nav__user-name">{props.spanText}</span>
+            <span className="user-nav__user-name">{props.spanText}</span>
         </div>
     )
 }

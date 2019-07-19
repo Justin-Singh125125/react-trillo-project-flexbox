@@ -12,7 +12,7 @@ const UserNavbarIconBox = (props) => {
                 svgSelection={props.svgSelection}
 
             />
-            <span class="user-nav__notification">{props.spanText}</span>
+            <span className="user-nav__notification">{props.spanText}</span>
         </div>
     )
 }

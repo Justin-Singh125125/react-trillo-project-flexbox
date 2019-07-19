@@ -20,14 +20,22 @@ import Overview from "../../main-components/Overview";
 import List from "../../main-components/List";
 import Paragraph from "../../main-components/Paragraph";
 import Recommend from "../../main-components/Recommend";
+import Review from "../../main-components/Review";
+import InfiniteButton from "../../main-components/InfiniteButton";
+import Cta from "../../main-components/Cta";
 
 //sub-components
 import UserNavbarIconBox from "../../sub-components/User-Navbar-Icon-Box";
 import UserNavbarImage from "../../sub-components/User-Navbar-Image";
+import ReviewText from "../../sub-components/ReviewText";
+import ReviewUser from "../../sub-components/Review-User";
 
 //images
 import LogoImage from "../../img/logo.png";
 import UserImage from "../../img/me.jpeg"
+import User_Review_1 from "../../img/user-1.jpg";
+import User_Review_2 from "../../img/user-2.jpg";
+
 
 //svg sprites
 import SvgIcons from '../../img/sprite.svg'
@@ -89,9 +97,34 @@ class Home extends React.Component {
                                 <Recommend />
                             </Description>
                             <UserReviews>
-                                User reviews
+                                <Review>
+                                    <ReviewText
+                                        userQuote="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi, totam, itaque officia ex."
+                                    />
+                                    <ReviewUser
+                                        src={User_Review_1}
+                                        alt="User 1"
+                                        userName="Nick Smith"
+                                        userDate="Feb 23rd, 2017"
+                                        userRating="7.8"
+                                    />
+                                </Review>
+                                <Review>
+                                    <ReviewText
+                                        userQuote="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi."
+                                    />
+                                    <ReviewUser
+                                        src={User_Review_2}
+                                        alt="User 2"
+                                        userName="Mary Thomas"
+                                        userDate="Sept 13th, 2017"
+                                        userRating="9.3"
+                                    />
+                                </Review>
+                                <InfiniteButton btnText="Show all " arrow={true} />
                             </UserReviews>
                         </Detail>
+                        <Cta />
                     </HotelView>
                 </Content>
 
