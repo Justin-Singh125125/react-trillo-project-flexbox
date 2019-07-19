@@ -5,7 +5,9 @@ import Container from "../../layout/Container";
 import Header from "../../layout/Header";
 import Content from "../../layout/Content";
 import HotelView from "../../layout/Hotel-View";
-
+import Detail from "../../layout/Detail";
+import Description from "../../layout/Description";
+import UserReviews from "../../layout/User-Reviews";
 
 //main-components
 import UserNavbar from "../../main-components/UserNavbar";
@@ -15,7 +17,9 @@ import Sidebar from "../../layout/Sidebar";
 import SideNavbar from "../../main-components/Side-Navbar";
 import Gallery from "../../main-components/Gallery";
 import Overview from "../../main-components/Overview";
-
+import List from "../../main-components/List";
+import Paragraph from "../../main-components/Paragraph";
+import Recommend from "../../main-components/Recommend";
 
 //sub-components
 import UserNavbarIconBox from "../../sub-components/User-Navbar-Icon-Box";
@@ -73,6 +77,21 @@ class Home extends React.Component {
                     <HotelView>
                         <Gallery />
                         <Overview />
+                        <Detail>
+                            <Description>
+                                <Paragraph
+                                    text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi nisi dignissimos debitis ratione sapiente saepe. Accusantium cumque, quas, ut corporis incidunt deserunt quae architecto voluptate."
+                                />
+                                <Paragraph
+                                    text="Accusantium cumque, quas, ut corporis incidunt deserunt quae architecto voluptate delectus, inventore iure aliquid aliquam."
+                                />
+                                <List />
+                                <Recommend />
+                            </Description>
+                            <UserReviews>
+                                User reviews
+                            </UserReviews>
+                        </Detail>
                     </HotelView>
                 </Content>
 
