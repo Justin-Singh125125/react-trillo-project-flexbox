@@ -22,6 +22,7 @@ import Paragraph from "../../main-components/Paragraph";
 import Recommend from "../../main-components/Recommend";
 import Review from "../../main-components/Review";
 import InfiniteButton from "../../main-components/InfiniteButton";
+import Cta from "../../main-components/Cta";
 
 //sub-components
 import UserNavbarIconBox from "../../sub-components/User-Navbar-Icon-Box";
@@ -123,6 +124,7 @@ class Home extends React.Component {
                                 <InfiniteButton btnText="Show all " arrow={true} />
                             </UserReviews>
                         </Detail>
+                        <Cta />
                     </HotelView>
                 </Content>
 
