@@ -18,6 +18,10 @@ html{
     //1 rem = 10px
     //16 px is the default font size
     font-size: 62.5%;
+
+    @media only screen and (max-width: $bp-large){
+        font-size: 50%;
+    }
 }
 body{
     font-family: 'Open sans', sans-serif;
