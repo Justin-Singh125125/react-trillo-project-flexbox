@@ -7,6 +7,11 @@
     align-items: center;
     justify-content: center;
 
+    @media only screen and (max-width: $bp-smallest){
+      order: 1;
+      flex: 0 0 100%;
+    }
+
     //input tags don't inhert base fonts,colors,etc
     &__input{
         font-family: inherit;
@@ -19,11 +24,19 @@
         width: 90%;
         margin-right: -3.25rem;
         transition: all .2s;
+
+        @media only screen and (max-width: $bp-small){
+            width: 80%;
+        }
         
         &:focus{
             width: 100%;
             outline: none;
             background-color: $color-grey-light-3;
+
+            @media only screen and (max-width: $bp-small){
+                width: 90%;
+            }
         }
         &::-webkit-input-placeholder{
             font-weight: 100;
