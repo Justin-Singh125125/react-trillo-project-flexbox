@@ -4,4 +4,10 @@
     padding: 4.5rem;
     background-color: $color-grey-light-1;
     border-bottom: $line;
+
+
+    
+    @media only screen and (max-width: $bp-medium){
+        padding: 3rem;
+    }
 }
